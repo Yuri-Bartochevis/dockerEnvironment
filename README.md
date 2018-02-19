@@ -32,5 +32,5 @@ Execute Enviroment with docker compose
 $ sudo docker-compose up
 ```
 
-# Docker-compose Usage
+# Docker-compose
 See [Docker Compose Documentation](https://docs.docker.com/compose/).
