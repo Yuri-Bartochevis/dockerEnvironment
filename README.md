@@ -11,7 +11,7 @@ If you're not familiar with Docker, can have a look at these books (in CN):
 Run this environment is a quite simple,you'll need to follow these steps.
 
 ## #First Step
-        - Install Docker and Docker Compose
+Install Docker and Docker Compose
 
 ```bash
 $ curl -sSL https://get.docker.com/ | sh
@@ -19,14 +19,14 @@ $ sudo pip install docker-compose
 ```
 
 ## #Second Step
-        - Clone environment from github.
+Clone environment from github.
 
 ```bash
 $ sudo git clone https://github.com/Yuri-Bartochevis/dockerEnvironment.git
 ```
 
-## #third and Last Step
-        - Execute Enviroment with docker compose
+## #Third and Last Step
+Execute Enviroment with docker compose
 
 ```bash
 $ sudo docker-compose up
