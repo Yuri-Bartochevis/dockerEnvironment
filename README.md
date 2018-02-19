@@ -1,5 +1,5 @@
 
-#Docker Basic Enviroment
+Docker Basic Enviroment
 ===
 Some typical docker compose example.
 
@@ -25,7 +25,7 @@ $ sudo pip install docker-compose
 $ sudo git clone https://github.com/Yuri-Bartochevis/dockerEnvironment.git
 ```
 
-## third and Last Step
+## #third and Last Step
         - Execute Enviroment with docker compose
 
 ```bash
