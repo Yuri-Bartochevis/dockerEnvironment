@@ -29,6 +29,7 @@ $ sudo git clone https://github.com/Yuri-Bartochevis/dockerEnvironment.git
 Execute Enviroment with docker compose
 
 ```bash
+$ sudo docker-compose build
 $ sudo docker-compose up
 ```
 
