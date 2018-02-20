@@ -1,0 +1,42 @@
+version: '2'
+services:
+  nginx:
+    build: ./nginx
+    links:
+      - node1:node1
+      - node2:node2
+    ports:
+      - "80:80"
+
+  node1:
+    build: ./application
+    links:
+      - redis
+      - postgres
+    ports:
+      - "8080"
+
+  node2:
+    build: ./application
+    links:
+      - redis
+      - postgres
+    ports:
+      - "8080"
+
+  redis:
+    build: ./redis
+    ports:
+      - "6379"
+
+  postgres:
+    build: ./postgres   
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      PGDATA: /data/postgres
+    volumes:
+      - /data/postgres:/data/postgres
+    ports:
+      - "5432:5432"
+    restart: unless-stopped
